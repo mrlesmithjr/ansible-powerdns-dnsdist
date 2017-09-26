@@ -7,4 +7,4 @@
   when: ansible_os_family == "RedHat"
 
 - include: config_dnsdist.yml
-  when: config_pdns_dnsdist
+  when: pdns_dnsdist_config
