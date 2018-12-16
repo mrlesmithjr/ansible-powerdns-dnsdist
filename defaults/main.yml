@@ -89,12 +89,12 @@ pdns_dnsdist_enable_webserver: true
 pdns_dnsdist_local_address: 0.0.0.0
 
 pdns_dnsdist_pool_rules: []
-  # - query:
-  #     - conviva.com
-  #   pool: google
-  # - query:
-  #     - facebook.com.
-  #   pool: opendns
+# - query:
+#     - conviva.com
+#   pool: google
+# - query:
+#     - facebook.com.
+#   pool: opendns
 
 pdns_dnsdist_pri_domain_name: example.org
 
@@ -103,6 +103,10 @@ pdns_dnsdist_redhat_pre_reqs:
   - yum-plugin-priorities
 
 pdns_dnsdist_repo_url: http://repo.powerdns.com
+
+pdns_dnsdist_resolv_conf_nameservers:
+  - 8.8.8.8
+  - 8.8.4.4
 
 # firstAvailable|RoundRobin|whashed|wrandom|leastOutstanding
 pdns_dnsdist_server_policy: leastOutstanding
