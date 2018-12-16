@@ -1,3 +1,3 @@
 skip_list:
-  - '303'
-  - '503'
+  - ANSIBLE0006
+  - ANSIBLE0016
