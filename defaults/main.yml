@@ -88,6 +88,8 @@ pdns_dnsdist_enable_webserver: true
 
 pdns_dnsdist_local_address: 0.0.0.0
 
+# Define specific domain lookup rules to use defined pools
+# Define in order preferred as they are processed in order
 pdns_dnsdist_pool_rules: []
 # - query:
 #     - conviva.com
@@ -95,6 +97,9 @@ pdns_dnsdist_pool_rules: []
 # - query:
 #     - facebook.com.
 #   pool: opendns
+# - query:
+#     - .
+#   pool: google
 
 pdns_dnsdist_pri_domain_name: example.org
 
